@@ -1,0 +1,60 @@
+package assign.ment3;
+
+import java.util.Scanner;
+
+public class Exercise1 {
+
+	public int add(int a, int b) {
+		int res = a + b;
+		return res;
+	}
+
+	public int sub(int a, int b) {
+		int res = a - b;
+		return res;
+	}
+
+	public int mul(int a, int b) {
+		int res = a * b;
+		return res;
+	}
+
+	public int div(int a, int b) {
+		int res = a / b;
+		return res;
+	}
+
+	public static void main(String[] args) {
+
+		Exercise1 e1 = new Exercise1();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter value of a=");
+		int a = sc.nextInt();
+		System.out.println("enter value of b=");
+		int b = sc.nextInt();
+		System.out.println("------");
+		int A = e1.add(a, b);
+		System.out.println(A);
+		System.out.println("-------");
+		int S = e1.sub(a, b);
+		System.out.println(S);
+		System.out.println("------");
+		int M = e1.mul(a, b);
+		System.out.println(M);
+		System.out.println("-------");
+		int d = e1.div(a, b);
+		System.out.println(d);
+		System.out.println("-----");
+		int j = 2;
+		j += 1;
+		j += 2;
+		System.out.println(j);
+		System.out.println("------");
+		j *= 2;
+		System.out.println(j);
+		System.out.println("---------");
+		j -= 2;
+		System.out.println(j);
+	}
+
+}

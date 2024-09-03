@@ -1,0 +1,48 @@
+package assign.ment2;
+
+public class Exercise1 {
+
+	int a;
+	String s;
+	char c;
+
+	public void m1() {
+		int a = 10;
+		String s = "TEJ";
+		char c = 'A';
+		System.out.println("value of a=" + a);
+		System.out.println("value of s=" + s);
+		System.out.println("value of c=" + c);
+
+	}
+
+	public void m2() {
+		int a = 20;
+		String s = "TEJU";
+		char c = 'B';
+		System.out.println("value of a=" + a);
+		System.out.println("value of s=" + s);
+		System.out.println("value of c=" + c);
+	}
+
+	public void display() {
+
+		System.out.println("value of a=" + a);
+		System.out.println("value of s=" + s);
+		System.out.println("value of c=" + c);
+	}
+
+	public static void main(String[] args) {
+
+		Exercise1 e1 = new Exercise1();
+		e1.m1();
+		System.out.println("-------");
+		e1.display();
+		System.out.println("------");
+		e1.m2();
+		System.out.println("-----");
+		e1.display();
+
+	}
+
+}

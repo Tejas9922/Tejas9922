@@ -1,0 +1,79 @@
+package assign.ment9;
+
+public class Employee {
+
+	private int mob;
+	private String name;
+	private String add;
+	private int sal;
+	private int id;
+
+	Employee() {
+
+	}
+
+	public Employee(int mb, String nm, String address, int salary, int idd) {
+		mob = mb;
+		name = nm;
+		add = address;
+		sal = salary;
+		id = idd;
+	}
+
+	public int getMob() {
+		return mob;
+	}
+
+	public void setMob(int newmob) {
+		mob = newmob;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String newname) {
+		name = newname;
+	}
+
+	public String getAdd() {
+		return add;
+	}
+
+	public void setAdd(String newadd) {
+		add = newadd;
+	}
+
+	public int getSal() {
+		return sal;
+	}
+
+	public void setSal(int newsal) {
+		sal = newsal;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int newid) {
+		id = newid;
+	}
+
+	public String toString() {
+		return "Employee [mob=" + mob + ", name=" + name + ", add=" + add + ", sal=" + sal + ", id=" + id + "]";
+	}
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee(234, "TEJ", "asfa", 34765, 6);
+		System.out.println(e1);
+		System.out.println("-------");
+		Employee e2 = new Employee();
+		e2.setId(234);
+		e2.setMob(2343);
+		e2.setName("VIRU");
+		System.out.println("updated =" + e2);
+
+	}
+
+}

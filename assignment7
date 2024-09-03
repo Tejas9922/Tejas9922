@@ -1,0 +1,39 @@
+package assign.ment7;
+
+public class breakk {
+
+	public static void main(String[] args) {
+		
+		for(int i=0;i<10;i++) {
+			if(i==8) {
+				break;
+				
+			}
+			System.out.println(i);
+		}
+
+	}
+
+}
+-------------------
+
+package assign.ment7;
+
+public class Continuee {
+
+	public static void main(String[] args) {
+		
+		
+		for(int i=0;i<10;i++) {
+			
+			if(i%2==1) {            // i%2!=0
+				continue;
+			}
+			System.out.println(i);
+		}
+	}
+
+}
+-------------
+
+write al flow control loops

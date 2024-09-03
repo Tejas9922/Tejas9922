@@ -1,0 +1,56 @@
+package assign.ment8;
+
+
+
+public class Constructor {
+
+	public int roll;
+	public String name;
+	public int marks;
+
+	public Constructor(int r, String n, int m) {
+		System.out.println("This is parameterized constructor");
+		roll = r;
+		name = n;
+		marks = m;
+
+		System.out.println(r + m);
+
+	}
+
+	public Constructor(int r) {
+		roll = r;
+		System.out.println(" parameter");
+	}
+
+	public void display() {
+		System.out.println("std roll=" + roll);
+		System.out.println("std name=" + name);
+		System.out.println("std marks=" + marks);
+
+	}
+
+	public Constructor() {
+
+		System.out.println(" non parameter");
+	}
+
+	public static void main(String[] args) {
+		Constructor c2 = new Constructor(4, "TEJ", 54444);
+
+		c2.display();
+		System.out.println("---------------");
+		Constructor c3 = new Constructor(4);
+
+		c3.display();
+		System.out.println("---------------");
+		Constructor c4 = new Constructor();
+
+		c4.display();
+		System.out.println("---------------");
+		Constructor c1 = new Constructor(5, "TEJ", 564);
+
+		c1.display();
+	}
+
+}

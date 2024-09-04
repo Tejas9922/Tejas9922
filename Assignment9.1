@@ -32,3 +32,63 @@ public class polymorphism {
 		a1.m1(5);
 	}
 }
+
+// overriding (Run-Time Polymorphism)
+
+
+package over.riding.polymorphism;
+
+public class A {
+
+	int mob;
+
+	protected void m1(int a) {
+		System.out.println(111);
+	}
+
+	void marry() {
+		System.out.println("Girl A");
+	}
+
+}
+------------------------------------------
+
+package over.riding.polymorphism;
+
+public class B extends A {
+
+	String nm;
+
+	void m2() {
+
+	}
+
+	@Override
+	public void m1(int a) {              // we can use protected or public here.
+		System.out.println(333);
+	}
+
+	@Override
+	void marry() {
+		System.out.println("Girl B");
+	}
+
+	public static void main(String[] args) {
+		B b1 = new B();
+		b1.m1(5);
+		A obja = new B();        // A object is created and B Constructor is created , i.e dynamic dispatch.
+		obja.m1(5);              // override method of A but in o/p show B o/p.
+		obja.marry();
+
+	}
+}
+
+// we can't override private method.
+// default -> protected -> public.
+// public is higher access specifier.
+// static can't be done.
+// we can't override variables in java.
+// Constructor can't be override.
+
+
+

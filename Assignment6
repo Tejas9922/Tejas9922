@@ -24,6 +24,7 @@ public class Exercise1 {
 		System.out.println("default access specifier");
 	}
 }
+-----------------------------------------------------
 package assign.ment6;
 
 public class Test_Exercise1 {

@@ -1,0 +1,60 @@
+package com.user;
+
+public class Tej {
+	public String name = " NEHE";
+	
+	public void tn() {
+		
+		System.out.println(123);
+	}
+
+}
+-------------
+package com.user.mobiles;
+
+public class home {
+	
+	public String name ="HAPPY";
+	
+	public void hp() {
+		
+		System.out.println("Hello");
+	} 
+
+}
+------------------
+package com.user.mobiles.apple;
+
+public class apple14 {
+	
+	public void app() {
+		
+		System.out.println(2314);
+	}
+
+}
+------------------
+package com;
+
+import com.user.*;
+import com.user.mobiles.*;
+import com.user.mobiles.apple.*;
+
+public class Test {
+	public static void main(String[] args) {
+
+		Tej t1 = new Tej();
+		t1.tn();
+
+		home h1 = new home();
+
+		h1.hp();
+
+		apple15 a1 = new apple15();
+		a1.ap();
+
+		apple14 a2 = new apple14();
+		a2.app();
+
+	}
+}
